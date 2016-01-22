@@ -1,24 +1,45 @@
+// var pingPong = function(userNumber) {
+//   for (var i = 1; i <= userNumber; i ++) {
+//     if (userNumber % 15 === 0) {
+//       $("ul#pingPongpang").append("<li>ping-pong</li>");
+//
+//     } else if (userNumber % 5 === 0) {
+//       $("ul#pingPongpang").append("<li>pong</li>");
+//
+//     } else if (userNumber % 3 === 0) {
+//       $("ul#pingPongpang").append("<li>ping</li>");
+//     }
+//     return $("ul#pingPongpang").append("<li></li>");
+//   }
+// }
 var pingPong = function(userNumber) {
+  var result = [];
   for (var i = 1; i <= userNumber; i ++) {
+    result.push(i);
+  }
     if (userNumber % 15 === 0) {
-      $("ul#pingPongpang").append("<li>ping-pong</li>");
+      return ("ping-pong");
 
     } else if (userNumber % 5 === 0) {
-      $("ul#pingPongpang").append("<li>pong</li>");
+      return ("pong");
 
     } else if (userNumber % 3 === 0) {
-      $("ul#pingPongpang").append("<li>ping</li>");
-    }
-    return $("ul#pingPongpang").append("<li></li>");
-  }
+      return ("ping");
+
+    } else {
+      }
+    return result;
 }
+
+
 $(document).ready(function() {
   $("button#pongMe").click(function(event) {
-
+    debugger;
     var userNumber = parseFloat($("input#userNum").val());
     var results = pingPong(userNumber);
 
     $("#pingPongpang").text(results);
+
     event.preventDefault();
   });
 });
