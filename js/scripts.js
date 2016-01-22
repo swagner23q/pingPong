@@ -4,7 +4,7 @@ var pingPong = function(userNumber) {
       return ("ping-pong");
 
     } else if (userNumber % 5 === 0) {
-      return ([5, 10, 15, 20]);
+      return ("pong");
 
     } else if (userNumber % 3 === 0) {
       return ([3, 6, 9, 12]);
