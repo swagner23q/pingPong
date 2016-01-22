@@ -13,22 +13,23 @@
 //   }
 // }
 var pingPong = function(userNumber) {
-  var result = [];
+  var outcome = [];
   for (var i = 1; i <= userNumber; i ++) {
-    result.push(i);
+    outcome.push(i);
   }
     if (userNumber % 15 === 0) {
-      return ("ping-pong");
-
-    } else if (userNumber % 5 === 0) {
-      return ("pong");
-
-    } else if (userNumber % 3 === 0) {
-      return ("ping");
-
-    } else {
-      }
-    return result;
+      return (outcome.push(i));
+    }
+    //
+    // } else if (userNumber % 5 === 0) {
+    //   return (result + (result.replace("pong")));
+    //
+    // } else if (userNumber % 3 === 0) {
+    //   return ("ping");
+    //
+    // } else {
+    //   }
+    return outcome;
 }
 
 
