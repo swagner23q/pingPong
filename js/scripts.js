@@ -12,3 +12,13 @@ var pingPong = function(userNumber) {
     return ([1, 2, 3, 4, 5, 6, 7]);
   }
 }
+// $(document).ready(function() {
+//   $("form#pongPlatform").submit(function(event) {
+//     var userNumber = parseFloat($("input#userNum").val());
+//
+//
+//
+//
+//     event.preventDefault();
+//   });
+// });

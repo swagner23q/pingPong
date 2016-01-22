@@ -3,12 +3,15 @@ describe('pingPong', function() {
     expect(pingPong(7)).to.eql([1, 2, 3, 4, 5, 6, 7]);
   });
   it("it will replace numbers divisble by 15 from a user number with the word ping-pong", function() {
-    expect(pingPong(60)).to.eql("ping-pong");
+    expect(pingPong(60)).to.equal("ping-pong");
   });
   it("it will replace numbers divisble by 5 from a user number with the word pong", function() {
-    expect(pingPong(20)).to.eql("pong");
+    expect(pingPong(20)).to.equal("pong");
   });
   it("it will replace numbers divisible by 3 from a user number with the word ping", function () {
-    expect(pingPong(12)).to.eql("ping");
+    expect(pingPong(12)).to.equal("ping");
+  })
+  it("it will return false when not a number", function () {
+    expect(pingPong("word").to.equal(false))
   })
 });
