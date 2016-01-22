@@ -22,7 +22,7 @@ var pingPong = function(userNumber) {
 $(document).ready(function() {
   $("button#pongMe").click(function(event) {
     $("#pingPongpang" ).empty();
-    var userNumber = parseFloat($("input#userNum").val());
+    var userNumber = parseInt($("input#userNum").val());
     var results = pingPong(userNumber);
 
     $("#pingPongpang").append("<li>" + results + "</li>");
