@@ -1,6 +1,5 @@
--Sara Wagner
- +## Sara Wagner
- +#### Ping Pong Code Review
+## Sara Wagner
+#### Ping Pong Code Review
 
 This is a project for week 2 at Epicodus. It includes languages **HTML, CSS, Bootstrap, Javascript, and Jquery**. The project will take a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
  -Numbers divisible by 3 are replaced with "ping"
