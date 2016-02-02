@@ -25,7 +25,11 @@ $(document).ready(function() {
     var userNumber = parseInt($("input#userNum").val());
     var results = pingPong(userNumber);
 
-    $("#pingPongpang").append("<li>" + results + "</li>");
+    $("#pingPongpang").append("<ul>");
+        results.forEach(function(singleResult){
+    $("#pingPongpang").append("<li>" + singleResult + "</li>");
+  });
+    $("#pingPongpang").append("</ul>");
 
     event.preventDefault();
   });
