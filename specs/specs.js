@@ -1,21 +1,14 @@
-describe('pingPong', function() {
-  // it("it will return false if values entered are not numbers", function () {
-  // expect(pingPong("word")).to.equal(false);
-  // });
-
-  it("it will count up to a number by one", function() {
-    expect(pingPong(7)).to.eql([1, 2, 3, 4, 5, 6, 7]);
+describe("pingPong", function() {
+    it("will count up to the user's number in multiples of 1, starting from 1, and it will put the numbers into an array", function () {
+      expect(pingPong(2)).to.eql([1,2]);
+    });
+    it("will return pingpong for numbers divisible by 3 and 5 in the array", function (){
+      expect(pingPong(15)).to.eql([1,2,"ping",4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"ping-pong"]);
+    });
+    it("will return pong for numbers divisible by 5 in the array", function() {
+      expect(pingPong(5)).to.eql([1,2,"ping",4,"pong"]);
+    });
+    it("will return ping for numbers divisible by 3 in the array", function() {
+      expect(pingPong(3)).to.eql([1,2,"ping"]);
+    });
   });
-
-  it("it will replace numbers divisble by 15 from a user number with the word ping-pong", function() {
-    expect(pingPong(60)).to.equal("ping-pong");
-  });
-
-  it("it will replace numbers divisble by 5 from a user number with the word pong", function() {
-    expect(pingPong(20)).to.equal("pong");
-  });
-
-  it("it will replace numbers divisible by 3 from a user number with the word ping", function () {
-    expect(pingPong(12)).to.equal("ping");
-  });
-});
